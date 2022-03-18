@@ -1,0 +1,84 @@
+.main-container .pricing{
+	width: 100%;
+	height: 100%;
+	background: var(--transparent);
+	padding: 0 0 4rem 0;
+}
+.main-container .pricing >h1{
+	background: var(--gradient);
+	color: transparent;
+	-webkit-background-clip: text;
+	text-align: center;
+	padding: 6rem 0 4rem 0;
+	font-size: 40px;
+}
+.main-container .pricing .pricing-con{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 1rem;
+	margin: 0 auto;
+	max-width: 1110px;
+}
+
+.main-container .pricing .pricing-con div{
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	transition: .4s ease-in;
+
+}
+.main-container .pricing .pricing-con div:hover{
+	border: 1px solid var(--purple);
+}
+.main-container .pricing .pricing-con div h1{
+	color: var(--purple);
+	margin-bottom: 2rem;
+}
+.main-container .pricing .pricing-con div h2{
+	color: var(--pink);
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+.main-container .pricing .pricing-con div h2 span{
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+.main-container .pricing .pricing-con div p{
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+.main-container .pricing .pricing-con div .fa-solid.fa-check{
+	color: yellowgreen;
+}
+.main-container .pricing .pricing-con div .fa-solid.fa-xmark{
+	color: orange;
+}
+.main-container .pricing .pricing-con div a{
+	padding: 1rem 3rem;
+	background: var(--gradient);
+	text-decoration: none;
+	border-radius: 3rem;
+	color: #ffff;
+	font-size: 1.2rem;
+	transition: .4s ease;
+}
+.main-container .pricing .pricing-con div a:hover{
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px){
+		.main-container .pricing .pricing-con{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: 1rem;
+		margin: 0 auto;
+		max-width: 1110px;
+	}
+	.main-container .pricing .pricing-con{
+		max-width: 400px;
+	}
+}

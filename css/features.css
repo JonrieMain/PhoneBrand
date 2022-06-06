@@ -1,7 +1,8 @@
 .main-container .features{
 	height: 100%;
 	width: 100%;
-	background: var(--transparent);
+	/*background: var(--transparent);*/
+	background: url(../images/appFeaturesBg.png)no-repeat center center/cover;
 	padding: 1.5rem 1rem;
 }
 .main-container .features h1{

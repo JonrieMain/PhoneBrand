@@ -53,6 +53,7 @@
 .main-container .review .user-con div h1{
 	color: var(--pink);
 	font-size: 1.5rem;
+	text-align: center;
 }
 .main-container .review .user-con div .stars-con i{
 	color: var(--purple);
